@@ -1,0 +1,22 @@
+<html>
+    <div class="container">
+        <a href="/home">
+            <button class="btn btn-primary btn-lg">Home</button>
+        </a>
+    </div>
+    <head>
+    </head>
+    <body>
+        <form class = "grid" action = "/result" method = "POST">
+            
+            <label for = "Name">Please enter a word</label>
+            <input type="text" id="word" name="word">
+            
+            <center><input type="Submit" class = "file_submit" value="Enter"></center>
+            {% if word%}
+                <h3 style="color: rgb(216, 44, 216)">{{word}}</h3>
+            {% endif%}
+
+        </form>
+    </body>
+</html>
