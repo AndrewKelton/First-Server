@@ -7,9 +7,9 @@ app=Flask(__name__)
 @app.route("/")
 @app.route("/home")
 def home():
-    # global password 
-    # password = request.args.get('data')
-    return render_template("home.html")
+    global password 
+    password = request.args.get('password')
+    return render_template("home.html",password=password)
 
 
 @app.route("/scramble", methods=['POST','GET'])
