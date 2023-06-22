@@ -30,7 +30,6 @@ def passwordgen():
     return render_template("passwordgen.html")
     
 
-
 #password generator result
 @app.route("/resultpass", methods=['POST','GET'])
 def passwordresult():
