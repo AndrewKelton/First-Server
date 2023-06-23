@@ -7,8 +7,9 @@ app=Flask(__name__)
 @app.route("/")
 @app.route("/home")
 def home():
-    global password 
-    password = request.args.get('password')
+    global votes
+    if votes > 0:
+        votes=votes
     return render_template("home.html",password=password)
 
 
