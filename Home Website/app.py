@@ -10,7 +10,7 @@ def home():
     global votes
     if votes > 0:
         votes=votes
-    return render_template("home.html",password=password)
+    return render_template("home.html",votes=votes)
 
 
 @app.route("/scramble", methods=['POST','GET'])
